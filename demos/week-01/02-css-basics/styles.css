@@ -1,0 +1,42 @@
+/* when you select an HTML element, the styles will apply to that element and all its children */
+body {
+  background-color: peru;
+  font-family: monospace;
+  /* rem is dynamic */
+  font-size: 3rem;
+}
+
+/* selector with a class name --> class names are reusable */
+.header-btn {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+/* selector with an id --> ids are unique */
+
+#main-btn {
+  background-color: green;
+  color: violet;
+}
+
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* nested selectors --> first element is the parent, then the child we are selecting */
+header button {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+.header-img {
+  /* pixels are static */
+  height: 250px;
+  width: auto;
+}
+
+/* pseudo-class is a more interactive way of selecting an element */
+#main-btn:hover {
+  background-color: violet;
+  color: green;
+}
