@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: peru;
+}
+
+header {
+  position: fixed;
+}
+
+.pine-tree-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: aqua;
+}
+
+.palm-tree-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  color: yellow;
+}
+
+.palm-container {
+  position: relative;
+}
