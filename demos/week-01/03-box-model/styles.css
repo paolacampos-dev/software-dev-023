@@ -1,0 +1,23 @@
+/* Tips */
+
+/* Have a CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* box-sizing: border-box keeps our content size consistent */
+/* Otherwise, the border size will be added as part of the content size */
+
+/* this will overwrite the reset padding */
+h1 {
+  padding: 20px;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 20px solid red;
+  margin: 10px;
+}
