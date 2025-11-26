@@ -1,0 +1,65 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.categories-list {
+  border-top: 2px solid goldenrod;
+  border-bottom: 2px solid goldenrod;
+  margin-block: 5rem;
+}
+
+.author-name {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.individual-book {
+  border: 2px solid grey;
+  border-radius: 0.5em;
+  padding: 1em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.big-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+}
+
+.books-grid {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.books-grid img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.author img {
+  width: 100px;
+}
+
+/* this media query ONLY applies when the screen is a min of 600px */
+@media (min-width: 600px) {
+  .author {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
