@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms and validation</h1>
+    <!-- structure of a form -->
+    <form id="user-form">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="username">Username: </label>
+        <input type="text" name="username" required />
+        <label for="email">Email: </label>
+        <input type="email" name="email" required />
+        <label for="password">Password: </label>
+        <input type="password" name="password" required />
+      </fieldset>
+      <fieldset>
+        <legend>Professional Info</legend>
+        <label for="jobRole">Job role: </label>
+        <input type="text" name="jobRole" placeholder="optional" />
+        <label for="contractType">Are you salaried or a contractor?</label>
+        <select name="contractType">
+          <option value="" disabled selected>Select a type:</option>
+          <option value="S245Y">Salaried</option>
+          <option value="C765P">Contractor</option>
+        </select>
+      </fieldset>
+      <button type="submit">Submit</button>
+      <!-- the more validation you add to your inputs, the more accurate the data will be -->
+    </form>
+  </body>
+</html>
