@@ -4,6 +4,9 @@ import express from "express";
 // instantiate our express app
 const app = express();
 
+// allow our server to recieve information in the request
+app.use(express.json());
+
 // pretend we have a data base (but actually we are just going to write sme birds in an array)
 const data = [
   { name: "Robin", type: "garden", size: "small", cuteFactor: 900 },
@@ -26,9 +29,23 @@ app.get("/", function (request, response) {
   response.json("You are looking at my root route. How roude!");
 });
 
-// /birds route
+// GET /birds route
 app.get("/birds", function (request, response) {
   response.json(data);
+});
+
+// POST /birds route (but this one is to add a bird)
+// this doesn't actually work, because we don't actually have a database yet
+app.post("/birds", function (request, response) {
+  // here we might add something to the database (becauset this is a POST request after all)
+  response.json("This is the POST /birds route");
+});
+
+// POST endpoint, that recieves data from the client
+app.post("/add", function (request, response) {
+  const numA = request.body.a;
+  const numB = request.body.b;
+  response.json(`${numA} + ${numB} = ${numA + numB}`);
 });
 
 // start our server
