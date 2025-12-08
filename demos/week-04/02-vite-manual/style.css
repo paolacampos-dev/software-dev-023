@@ -1,0 +1,9 @@
+body {
+  min-height: 100vh;
+  background-color: tomato;
+  color: white;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
