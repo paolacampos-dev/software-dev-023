@@ -19,3 +19,6 @@ What went really well and what could have gone better?
 - The bigger picture is scary and overwhelming! Divide your project in smaller manageable steps (use the user stories to help you).
 - Deploy as soon as possible!
 - Plan! Plan! Plan! PLAN!!!!!!! --> a plan keeps you focused
+- This is what a schema visualiser looks like:
+  ![schema-visualiser example](./planning/schema-visualiser.png)
+  There are instructions on your assignment brief on how to find it on Supabase (or you can google it too!)
