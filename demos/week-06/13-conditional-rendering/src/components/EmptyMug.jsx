@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function EmptyMug() {
   const [empty, setEmpty] = useState(true);
+  //* The structure of a ternary operator.  " condition ? ifTrue : ifFalse "
   return (
     <div>
       <p>Is the mug empty?</p>
