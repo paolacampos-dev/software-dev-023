@@ -1,5 +1,12 @@
 // ! DO NOT PUT ALL YOUR CODE IN JUST App.jsx
 // ! USE COMPONENTS
+/*
+examples of components:
+- images container
+- single image
+- larger image
+- ui buttons (left + right)
+*/
 
 // Start with a wireframe: build you react app UI first, then start coding
 
