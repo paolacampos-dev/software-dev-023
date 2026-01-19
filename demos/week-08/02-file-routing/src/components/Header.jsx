@@ -10,6 +10,7 @@ export default function Header() {
         <Link href={"/"}>Home</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/staff"}>Staff</Link>
+        <Link href={"/profile/manny"}>Profile</Link>
       </nav>
     </>
   );
