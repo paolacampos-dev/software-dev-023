@@ -1,0 +1,11 @@
+// route --> "/about"
+import Link from "next/link";
+
+export default function AboutPage() {
+  return (
+    <>
+      <h1>About Page</h1>
+      <Link href={"/about/history"}>Read about the history of our company</Link>
+    </>
+  );
+}
