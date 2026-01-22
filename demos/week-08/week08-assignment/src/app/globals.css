@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Styling */
+/* media queries go in the globals */
+/* use CSS modules for specific components */
+/* use Tailwind for bespoke element styling */
+/* if you use CSS modules, you can either store them together with the component they are styling OR in a separate styles folder */
