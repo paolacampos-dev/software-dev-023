@@ -1,0 +1,16 @@
+/* component styles */
+
+.h1 {
+  color: var(--fontColour);
+  background-color: orangered;
+}
+
+.rollercoasterForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rollercoasterForm input {
+  background-color: yellow;
+}
