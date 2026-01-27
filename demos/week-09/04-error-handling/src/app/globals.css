@@ -1,0 +1,21 @@
+/* global styles for our whole app */
+
+@import "tailwindcss";
+
+/* the :root pseudo-class selects the root of our app */
+/* in the :root, I will declare styles that I want to use across my app (colour palettes, fallback font, background colours...) */
+/* CSS variable --> declare reusable variables to be available in my whole app */
+:root {
+  --bgColour: #3439d5;
+  --fontColour: #efe5e5;
+  --accent: #6aba28;
+  --font: monospace;
+}
+
+body {
+  background-color: var(--bgColour);
+  color: var(--fontColour);
+  font-family: var(--font);
+}
+
+/* media queries */
