@@ -9,6 +9,7 @@
 import { db } from "@/utils/dbConnection";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default async function DeletePage({ params }) {
   //we have access to params because this route is nested in the dynamic route
@@ -30,6 +31,7 @@ export default async function DeletePage({ params }) {
       <form action={handleDelete}>
         <button className="bg-red-600 text-amber-100">Delete</button>
       </form>
+      <Link href={`/rollercoasters/${rollercoasterId}`}>Go back</Link>
     </>
   );
 }

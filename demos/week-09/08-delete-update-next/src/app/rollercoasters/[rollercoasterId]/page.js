@@ -1,4 +1,5 @@
 //TODO: render each individual rollercoaster
+import Link from "next/link";
 
 export async function generateMetadata({ params }) {
   const { rollercoasterId } = await params;
@@ -50,6 +51,18 @@ export default async function RollercoasterId({ params }) {
       <Image src={data.url} alt={data.name} width={500} height={200} />
       <p>{data.height}</p>
       <p>{data.country}</p>
+      <Link
+        href={`/rollercoasters/${rollercoasterId}/edit`}
+        className="bg-sky-200"
+      >
+        Edit
+      </Link>
+      <Link
+        href={`/rollercoasters/${rollercoasterId}/delete`}
+        className="bg-red-500"
+      >
+        Delete
+      </Link>
     </>
   );
 }
