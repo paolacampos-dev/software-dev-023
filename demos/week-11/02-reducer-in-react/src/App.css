@@ -1,0 +1,20 @@
+/* themes */
+
+.light {
+  color: black;
+  background-color: gainsboro;
+}
+
+.dark {
+  color: gainsboro;
+  background-color: black;
+}
+
+.colourblind {
+  color: orange;
+  background-color: blue;
+}
+
+.dyslexia {
+  font-family: monospace;
+}
